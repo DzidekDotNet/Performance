@@ -1,11 +1,15 @@
 ﻿using System.Text;
 using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Columns;
+using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Running;
+using BenchmarkDotNet.Reports;
 
 BenchmarkRunner.Run<Benchmark>();
 
 [MemoryDiagnoser]
 [RankColumn]
+[Config(typeof(Config))]
 public class Benchmark
 {
     private readonly string _sampleString = new('a', 500);
@@ -251,6 +255,14 @@ public class Benchmark
 
         return sum + sb.Length;
     }
+    private class Config : ManualConfig
+    {
+        public Config()
+        {
+            SummaryStyle = SummaryStyle.Default.WithRatioStyle(RatioStyle.Trend);
+        }
+    }
+    
 }
 
 public ref struct RefStructWithInt
