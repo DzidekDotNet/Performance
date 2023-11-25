@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkWithMediatR"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{69EE460A-D098-4C28-BBA1-C0E95B5A5F3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskvsValueTask", "TaskvsValueTask\TaskvsValueTask.csproj", "{04C4D8F4-4256-46DF-8E99-6E773A78904B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait", "AsyncAwait\AsyncAwait.csproj", "{7B3F31A6-E6BB-45E6-8F42-B7681135FC72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{69EE460A-D098-4C28-BBA1-C0E95B5A5F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69EE460A-D098-4C28-BBA1-C0E95B5A5F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69EE460A-D098-4C28-BBA1-C0E95B5A5F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C4D8F4-4256-46DF-8E99-6E773A78904B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C4D8F4-4256-46DF-8E99-6E773A78904B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C4D8F4-4256-46DF-8E99-6E773A78904B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C4D8F4-4256-46DF-8E99-6E773A78904B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3F31A6-E6BB-45E6-8F42-B7681135FC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3F31A6-E6BB-45E6-8F42-B7681135FC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3F31A6-E6BB-45E6-8F42-B7681135FC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3F31A6-E6BB-45E6-8F42-B7681135FC72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

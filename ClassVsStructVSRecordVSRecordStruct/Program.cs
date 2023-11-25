@@ -7,6 +7,7 @@ using BenchmarkDotNet.Reports;
 
 BenchmarkRunner.Run<Benchmark>();
 
+
 [MemoryDiagnoser]
 [RankColumn]
 [Config(typeof(Config))]

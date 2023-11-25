@@ -53,7 +53,7 @@ public class GetCustomersBenchmark
   }
 
   [Benchmark]
-  public async Task GetCustomers_WithStruct()
+  public async Task GetCustomers_WithAsNoTracking()
   {
     counter = GetCounter(counter);
     var customers = await _mediator.Send(new GetCustomersWithAsNoTrackingQuery(counter, CustomersTake), CancellationToken.None);
