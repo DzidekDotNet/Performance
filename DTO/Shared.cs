@@ -21,11 +21,11 @@ internal sealed class CustomerClassDTO
   }
 }
 
-internal sealed class CustomerRecordDTO
+internal sealed record CustomerRecordDTO
 {
-  public int Id { get; set; }
-  public string Name { get; set; }
-  public long Revenue { get; set; }
+  public int Id { get; init; }
+  public string Name { get; init; }
+  public long Revenue { get; init; }
   
   public CustomerRecordDTO(Customer customer)
   {
@@ -51,9 +51,9 @@ internal struct CustomerStructDTO
 
 internal record struct CustomerRecordStructDTO
 {
-  public int Id { get; set; }
-  public string Name { get; set; }
-  public long Revenue { get; set; }
+  public int Id { get; init; }
+  public string Name { get; init; }
+  public long Revenue { get; init; }
   
   public CustomerRecordStructDTO(Customer customer)
   {
