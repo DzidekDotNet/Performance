@@ -1,14 +1,19 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Columns;
 using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Running;
 using DTO;
+
 // BenchmarkRunner.Run<BenchmarkObjectResult>();
 
 [MemoryDiagnoser]
 [RankColumn]
 [Config(typeof(Config))]
+// [SimpleJob(RuntimeMoniker.Net60, baseline:true)]
+// [SimpleJob(RuntimeMoniker.Net70)]
+// [SimpleJob(RuntimeMoniker.Net80)]
 public class BenchmarkObjectResult
 {
   // [Params(100 , 10000)]
@@ -57,7 +62,7 @@ public class BenchmarkObjectResult
     }
     return total;
   }
-
+  
   [Benchmark]
   public long StructDTO()
   {
