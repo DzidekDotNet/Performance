@@ -23,3 +23,9 @@ Navigate to the Program.cs file.
 ![DotNet8ParameterIn.png](DotNet8ParameterIn.png)
 #### Comparision of different versions of DotNet
 ![ParameterIn.png](ParameterIn.png)
+
+### Comparison of different method to take object from IoC
+#### For DotNet 8, a comparison of different types of objects
+
+#### Comparision of different versions of DotNet
+![IoCMethodVersions.png](IoCMethodVersions.png)

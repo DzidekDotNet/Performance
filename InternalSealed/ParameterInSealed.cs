@@ -5,7 +5,7 @@ using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Running;
 using Microsoft.Extensions.DependencyInjection;
-BenchmarkRunner.Run<ParameterInSealedBenchmark>( /*new DebugInProcessConfig()*/);
+// BenchmarkRunner.Run<ParameterInSealedBenchmark>( /*new DebugInProcessConfig()*/);
 
 [MemoryDiagnoser]
 [RankColumn]
