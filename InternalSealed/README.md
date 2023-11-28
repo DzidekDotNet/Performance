@@ -26,6 +26,6 @@ Navigate to the Program.cs file.
 
 ### Comparison of different method to take object from IoC
 #### For DotNet 8, a comparison of different types of objects
-
+![IoCMethodDotNet8.png](IoCMethodDotNet8.png)
 #### Comparision of different versions of DotNet
 ![IoCMethodVersions.png](IoCMethodVersions.png)
