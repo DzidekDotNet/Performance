@@ -6,15 +6,15 @@ using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Running;
 // ReSharper disable CanSimplifyDictionaryLookupWithTryGetValue
-BenchmarkRunner.Run<Benchmark>( /*new DebugInProcessConfig()*/);
+// BenchmarkRunner.Run<RemoveBenchmark>( /*new DebugInProcessConfig()*/);
 
 [MemoryDiagnoser]
 [RankColumn]
 [Config(typeof(Config))]
 // [SimpleJob(RuntimeMoniker.Net60, baseline:true)]
 // [SimpleJob(RuntimeMoniker.Net70)]
-[SimpleJob(RuntimeMoniker.Net80)]
-public class Benchmark
+// [SimpleJob(RuntimeMoniker.Net80)]
+public class RemoveBenchmark
 {
 
   private readonly Dictionary<string, int> _counts = Regex.Matches(
@@ -26,25 +26,18 @@ public class Benchmark
   private string _word = "the";
   
   [Benchmark(Baseline = true)]
-  public int LookupWithContainsKey()
+  public void LookupWithContainsKey()
   {
     if (_counts.ContainsKey(_word))
     {
-      return _counts[_word];
+      _counts.Remove(_word);
     }
-  
-    return -1;
   }
 
   [Benchmark]
-  public int LookupWithTryGetValue()
+  public void LookupWithTryGetValue()
   {
-    if (_counts.TryGetValue(_word, out int count))
-    {
-      return count;
-    }
-
-    return -1;
+    _counts.Remove(_word);
   }
   
   private class Config : ManualConfig
