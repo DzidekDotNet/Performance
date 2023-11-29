@@ -28,7 +28,7 @@ When you checking IEnumerable type passing array
 private IEnumerable<int> _source = (int[])(object)new uint[42];
 
 _source is int[]
-// is slower then
+// is slower than
 _source.GetType() == typeof(int[])    
 ```
 For more details go to [CollectionsBenchmark.cs](CollectionsBenchmark.cs)
