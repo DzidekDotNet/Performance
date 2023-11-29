@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalSealed", "InternalS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeCheck", "TypeCheck\TypeCheck.csproj", "{BE6E89B9-EBE2-4909-9058-07AAD7F2E7B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryKeyLookup", "DictionaryKeyLookup\DictionaryKeyLookup.csproj", "{679AA4E9-62A3-471C-92A2-867A41FD747F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{BE6E89B9-EBE2-4909-9058-07AAD7F2E7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE6E89B9-EBE2-4909-9058-07AAD7F2E7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE6E89B9-EBE2-4909-9058-07AAD7F2E7B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679AA4E9-62A3-471C-92A2-867A41FD747F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679AA4E9-62A3-471C-92A2-867A41FD747F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679AA4E9-62A3-471C-92A2-867A41FD747F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679AA4E9-62A3-471C-92A2-867A41FD747F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
