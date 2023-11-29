@@ -6,7 +6,7 @@ using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Running;
 // ReSharper disable CanSimplifyDictionaryLookupWithTryGetValue
-BenchmarkRunner.Run<KeyLookupBenchmark>( /*new DebugInProcessConfig()*/);
+// BenchmarkRunner.Run<KeyLookupBenchmark>( /*new DebugInProcessConfig()*/);
 
 [MemoryDiagnoser]
 [RankColumn]

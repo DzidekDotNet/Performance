@@ -6,14 +6,14 @@ using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Running;
 // ReSharper disable CanSimplifyDictionaryLookupWithTryGetValue
-// BenchmarkRunner.Run<RemoveBenchmark>( /*new DebugInProcessConfig()*/);
+BenchmarkRunner.Run<RemoveBenchmark>( /*new DebugInProcessConfig()*/);
 
 [MemoryDiagnoser]
 [RankColumn]
 [Config(typeof(Config))]
 // [SimpleJob(RuntimeMoniker.Net60, baseline:true)]
 // [SimpleJob(RuntimeMoniker.Net70)]
-// [SimpleJob(RuntimeMoniker.Net80)]
+ [SimpleJob(RuntimeMoniker.Net80)]
 public class RemoveBenchmark
 {
 
@@ -26,7 +26,7 @@ public class RemoveBenchmark
   private string _word = "the";
   
   [Benchmark(Baseline = true)]
-  public void LookupWithContainsKey()
+  public void RemoveWithContainsKey()
   {
     if (_counts.ContainsKey(_word))
     {
@@ -35,7 +35,7 @@ public class RemoveBenchmark
   }
 
   [Benchmark]
-  public void LookupWithTryGetValue()
+  public void Remove()
   {
     _counts.Remove(_word);
   }
