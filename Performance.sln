@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryKeyLookup", "Dict
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionIndexer", "CollectionIndexer\CollectionIndexer.csproj", "{97EC1E7B-E79C-41BC-923C-1C47638EA90D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstallerIoC", "InstallerIoC\InstallerIoC.csproj", "{27553AC7-3EFA-4E2D-AA9E-7A0A2634CAED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstallerIoCModule", "InstallerIoCModule\InstallerIoCModule.csproj", "{0B8E8979-5B8F-479D-88DE-BC0BC85C44E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +64,13 @@ Global
 		{97EC1E7B-E79C-41BC-923C-1C47638EA90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97EC1E7B-E79C-41BC-923C-1C47638EA90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97EC1E7B-E79C-41BC-923C-1C47638EA90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27553AC7-3EFA-4E2D-AA9E-7A0A2634CAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27553AC7-3EFA-4E2D-AA9E-7A0A2634CAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27553AC7-3EFA-4E2D-AA9E-7A0A2634CAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27553AC7-3EFA-4E2D-AA9E-7A0A2634CAED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8E8979-5B8F-479D-88DE-BC0BC85C44E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8E8979-5B8F-479D-88DE-BC0BC85C44E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8E8979-5B8F-479D-88DE-BC0BC85C44E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8E8979-5B8F-479D-88DE-BC0BC85C44E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
