@@ -5,15 +5,16 @@ using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Running;
-// BenchmarkRunner.Run<CollectionIndexerBenchmark>( /*new DebugInProcessConfig()*/);
+BenchmarkRunner.Run<CollectionIndexerLastBenchmark>( /*new DebugInProcessConfig()*/);
 
 [MemoryDiagnoser]
+[DisassemblyDiagnoser]
 [RankColumn]
 [Config(typeof(Config))]
 // [SimpleJob(RuntimeMoniker.Net60, baseline:true)]
 // [SimpleJob(RuntimeMoniker.Net70)]
 [SimpleJob(RuntimeMoniker.Net80)]
-public class CollectionIndexerBenchmark
+public class CollectionIndexerLastBenchmark
 {
 
   private readonly IList<string> _collection = Regex.Matches(
@@ -24,21 +25,25 @@ public class CollectionIndexerBenchmark
     .ToList();
   
   [Benchmark(Baseline = true)]
-  public string First()
+  public string Last()
   {
-    return _collection.First();
+    
+    return _collection.Last();
+    
   }
 
   [Benchmark]
   public string Indexer()
   {
-    return _collection[0];
+    
+    return _collection[_collection.Count - 1];
+    
   }
   
   [Benchmark]
   public string ElementAt()
   {
-    return _collection.ElementAt(0);
+    return _collection.ElementAt(^1);
   }
   
   private class Config : ManualConfig

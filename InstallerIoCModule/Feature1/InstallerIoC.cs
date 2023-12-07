@@ -6,7 +6,9 @@ namespace InstallerIoCModule.Feature1;
 
 internal static class InstallerIoC
 {
-  internal static IServiceCollection AddFeature1(this IServiceCollection services, IConfiguration configuration) => 
+  internal static IServiceCollection AddFeature1(
+    this IServiceCollection services,
+    IConfiguration configuration) =>
     services
       .AddSubFeature1(configuration);
 }
